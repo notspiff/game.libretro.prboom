@@ -1,0 +1,5 @@
+[B]2013-08-17[/B] Version [B]2.5.1[/B]
+. Updated to bfe7c22 @ 2013-08-14
+
+[B]2013-02-16[/B] Version [B]2.5.0[/B]
+. Initial release: PrBoom v2.5.0, https://github.com/libretro/libretro-prboom @ 311ae96 (2013-02-02)

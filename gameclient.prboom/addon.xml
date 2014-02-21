@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="gameclient.prboom"
+		name="PrBoom"
+		version="2.5.1"
+		provider-name="Libretro">
+	<requires>
+		<import addon="xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux="prboom_libretro.so"
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms></platforms>
+		<extensions>wad|iwad</extensions>
+		<allowvfs>true</allowvfs>
+		<blockextract>false</blockextract>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">PrBoom v2.5.0</summary>
+		<description>PrBoom is a version of the classic 3D shoot'em'up game Doom, originally written by id Software. To play PrBoom, you need one of the main Doom data files (called the IWAD) from id Software - doom.wad, doom2.wad, tnt.wad or plutonia.wad - or the shareware doom1.wad.
+
+If you don't own any of the Doom games, get the shareware doom1.wad from doom19s.zip on Doomworld's shareware download page. http://www.doomworld.com/files/shareware.shtml
+
+Supported files: .wad, .iwad
+
+Source: https://github.com/libretro/libretro-prboom</description>
+		<platform>linux</platform>
+		<noicon>true</noicon>
+		<nofanart>true</nofanart>
+		
+	</extension>
+</addon>

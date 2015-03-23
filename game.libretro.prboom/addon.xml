@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="gameclient.prboom"
+<addon id="game.libretro.prboom"
 		name="PrBoom"
 		version="2.5.1"
 		provider-name="Libretro">
 	<requires>
-		<import addon="xbmc.libretro" version="1.0.0"/>
+		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
-	<extension point="xbmc.gameclient"
-			library_android=""
-			library_linux="prboom_libretro.so"
-			library_osx=""
-			library_windx=""
-			library_wingl="">
+	<extension point="kodi.gameclient"
+                   library_android="libgame.libretro.prboom.so"
+                   library_linux="game.libretro.prboom.so"
+                   library_osx="game.libretro.prboom.dylib"
+                   library_windx="game.libretro.prboom.dll"
+                   library_wingl="game.libretro.prboom.dll">
 		<platforms></platforms>
 		<extensions>wad|iwad</extensions>
 		<allowvfs>true</allowvfs>
@@ -26,9 +26,6 @@ If you don't own any of the Doom games, get the shareware doom1.wad from doom19s
 Supported files: .wad, .iwad
 
 Source: https://github.com/libretro/libretro-prboom</description>
-		<platform>linux</platform>
-		<noicon>true</noicon>
-		<nofanart>true</nofanart>
-		
+		<platform>all</platform>
 	</extension>
 </addon>

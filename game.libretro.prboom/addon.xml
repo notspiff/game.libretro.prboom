@@ -24,6 +24,8 @@ To play PrBoom, you need one of the main Doom data files (called the IWAD) from 
 
 If you don't own any of the Doom games, get the shareware doom1.wad from doom19s.zip on Doomworld's shareware download page. http://www.doomworld.com/files/shareware.shtml
 
+Additionally it needs the prboom.wad from https://github.com/libretro/libretro-prboom/raw/master/prboom.wad copied to the game directory.
+
 Supported files: .wad, .iwad</description>
 		<license>GPL v2.0</license>
 		<platform>all</platform>

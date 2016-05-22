@@ -11,7 +11,7 @@
                    library_wingl="game.libretro.prboom.dll">
         <platforms></platforms>
         <extensions>wad|iwad</extensions>
-        <supports_vfs>true</supports_vfs>
+        <supports_vfs>false</supports_vfs>
         <supports_game_loop>true</supports_game_loop>
         <supports_standalone>false</supports_standalone>
         <supports_keyboard>true</supports_keyboard>

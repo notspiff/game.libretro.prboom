@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="game.libretro.prboom"
-		name="PrBoom"
-		version="2.5.0"
-		provider-name="Libretro">
-	<requires>
-		<import addon="game.libretro" version="1.0.0"/>
-	</requires>
-	<extension point="kodi.gameclient"
+<addon id="game.libretro.prboom" name="PrBoom" version="2.5.0" provider-name="Libretro">
+    <requires>
+        <import addon="game.libretro" version="1.0.0"/>
+    </requires>
+    <extension point="kodi.gameclient"
                    library_android="libgame.libretro.prboom.so"
                    library_linux="game.libretro.prboom.so"
                    library_osx="game.libretro.prboom.dylib"
                    library_windx="game.libretro.prboom.dll"
                    library_wingl="game.libretro.prboom.dll">
-		<platforms></platforms>
-		<extensions>wad|iwad</extensions>
-		<supports_vfs>true</supports_vfs>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">PrBoom v2.5.0</summary>
-		<description>PrBoom is a version of the classic 3D shoot'em'up game Doom, originally written by id Software.
-		
+        <platforms></platforms>
+        <extensions>wad|iwad</extensions>
+        <supports_vfs>false</supports_vfs>
+        <supports_game_loop>true</supports_game_loop>
+        <supports_standalone>false</supports_standalone>
+        <supports_keyboard>true</supports_keyboard>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">PrBoom v2.5.0</summary>
+        <description>PrBoom is a version of the classic 3D shoot'em'up game Doom, originally written by id Software.
+
 To play PrBoom, you need one of the main Doom data files (called the IWAD) from id Software - doom.wad, doom2.wad, tnt.wad or plutonia.wad - or the shareware doom1.wad.
 
 If you don't own any of the Doom games, get the shareware doom1.wad from doom19s.zip on Doomworld's shareware download page. http://www.doomworld.com/files/shareware.shtml
 
-Supported files: .wad, .iwad
+Additionally it needs the prboom.wad from https://github.com/libretro/libretro-prboom/raw/master/prboom.wad copied to the game directory.
 
-License: GPL v2</description>
+Supported files: .wad, .iwad</description>
+		<license>GPL v2.0</license>
 		<platform>all</platform>
 		<nofanart>true</nofanart>
 	</extension>

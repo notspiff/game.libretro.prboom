@@ -4,11 +4,7 @@
         <import addon="game.libretro" version="1.0.0"/>
     </requires>
     <extension point="kodi.gameclient"
-                   library_android="libgame.libretro.prboom.so"
-                   library_linux="game.libretro.prboom.so"
-                   library_osx="game.libretro.prboom.dylib"
-                   library_windx="game.libretro.prboom.dll"
-                   library_wingl="game.libretro.prboom.dll">
+                   library_@PLATFORM@="@LIBRARY_FILENAME@">
         <platforms></platforms>
         <extensions>wad|iwad</extensions>
         <supports_vfs>false</supports_vfs>
@@ -28,7 +24,7 @@ Additionally it needs the prboom.wad from https://github.com/libretro/libretro-p
 
 Supported files: .wad, .iwad</description>
 		<license>GPL v2.0</license>
-		<platform>all</platform>
+		<platform>@PLATFORM@</platform>
 		<nofanart>true</nofanart>
 	</extension>
 </addon>

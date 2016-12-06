@@ -7,6 +7,6 @@ find_package(Kodi REQUIRED)
 find_package(libretro-prboom REQUIRED)
 
 set(PRBOOM_CUSTOM_BINARY ${PRBOOM_LIB}
-                         ${PROJECT_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX})
+    ${PROJECT_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX})
 
 build_addon(${PROJECT_NAME} PRBOOM "")

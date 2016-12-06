@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="game.libretro.prboom" name="PrBoom" version="2.5.0" provider-name="Libretro">
-    <requires>
-        <import addon="game.libretro" version="1.0.0"/>
-    </requires>
-    <extension point="kodi.gameclient"
-                   library_@PLATFORM@="@LIBRARY_FILENAME@">
-        <platforms></platforms>
-        <extensions>wad|iwad</extensions>
-        <supports_vfs>false</supports_vfs>
-        <supports_game_loop>true</supports_game_loop>
-        <supports_standalone>false</supports_standalone>
-        <supports_keyboard>true</supports_keyboard>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">PrBoom v2.5.0</summary>
-        <description>PrBoom is a version of the classic 3D shoot'em'up game Doom, originally written by id Software.
+<addon id="game.libretro.prboom"
+		name="Doom (PrBoom)"
+		version="2.5.0"
+		provider-name="Libretro">
+	<requires>
+		<import addon="game.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.gameclient"
+			library_@PLATFORM@="@LIBRARY_FILENAME@">
+		<platforms></platforms>
+		<extensions>wad|iwad</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_standalone>false</supports_standalone>
+		<supports_keyboard>true</supports_keyboard>
+		<supports_mouse>false</supports_mouse>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Doom (PrBoom) v2.5.0</summary>
+		<description>PrBoom is a version of the classic 3D shoot&#39;em&#39;up game Doom, originally written by id Software.
 
 To play PrBoom, you need one of the main Doom data files (called the IWAD) from id Software - doom.wad, doom2.wad, tnt.wad or plutonia.wad - or the shareware doom1.wad.
 
-If you don't own any of the Doom games, get the shareware doom1.wad from doom19s.zip on Doomworld's shareware download page. http://www.doomworld.com/files/shareware.shtml
+If you don&#39;t own any of the Doom games, get the shareware doom1.wad from doom19s.zip on Doomworld&#39;s shareware download page. http://www.doomworld.com/files/shareware.shtml
 
 Additionally it needs the prboom.wad from https://github.com/libretro/libretro-prboom/raw/master/prboom.wad copied to the game directory.
 
 Supported files: .wad, .iwad</description>
-		<license>GPL v2.0</license>
+		<license>GPLv2</license>
 		<platform>@PLATFORM@</platform>
-		<nofanart>true</nofanart>
 	</extension>
 </addon>

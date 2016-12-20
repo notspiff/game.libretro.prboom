@@ -16,7 +16,7 @@
 		<supports_mouse>false</supports_mouse>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Doom (PrBoom) v2.5.0 e2574f5</summary>
+		<summary lang="en">Doom (PrBoom) v2.5.0</summary>
 		<description>PrBoom is a version of the classic 3D shoot&#39;em&#39;up game Doom, originally written by id Software.
 
 To play PrBoom, you need one of the main Doom data files (called the IWAD) from id Software - doom.wad, doom2.wad, tnt.wad or plutonia.wad - or the shareware doom1.wad.
